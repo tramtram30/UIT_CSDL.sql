@@ -121,7 +121,7 @@ JOIN dbo.CTHD ON HD.SOHD = CTHD.SOHD
 WHERE MONTH(HD.NGHD) = 10 AND YEAR(HD.NGHD) = 2006
 GROUP BY MASP
 
-36. Tính doanh thu bán hàng của từng tháng trong năm 2006.
+--36. Tính doanh thu bán hàng của từng tháng trong năm 2006.
 SELECT MONTH(NGHD) AS THANG, SUM(TRIGIA) AS DOANHTHU
 FROM dbo.HOADON
 WHERE YEAR(NGHD) = 2006
